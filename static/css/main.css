@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: rgb(32, 106, 106);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#content {
+    background-color:rgb(198, 220, 220);
+    width: 80%;
+    max-width: 1200px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#page-title {
+    text-align: center;
+    margin: 10px 0 20px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:rgb(28, 98, 98);
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 3px;
+    color: rgb(32, 64, 64);
+}
+
+.form-control,
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: rgb(32, 106, 106);
+    box-shadow: 0 0 5px rgba(32, 106, 106, 0.5);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(28, 98, 98);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: rgb(28, 98, 98);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: rgb(28, 98, 98);
+}
+    
+@media (max-width: 600px) {
+    #content {
+        width: 95%;
+        padding: 20px;
+    }
+}
