@@ -55,7 +55,7 @@
                     <label class="form-label">
                         Parental Level of Education
                     </label>
-                    <select class="form-control" name="parental_level_of_education" placeholder="Enter you Parent Education" required>
+                    <select class="form-control" name="parental_level_of_education" placeholder="Enter your parent's education" required>
                         <option class="placeholder" selected disabled value="">Select Parent Education</option>
                         <option value="associate's degree">
                             associate's degree
@@ -97,8 +97,8 @@
                     <label class="form-label">
                         Test preparation Course
                     </label>
-                    <select class="form-control" name="test_preparation_course" placeholder="Enter your Course" required>
-                        <option class="placeholder" selected disabled value="">Select Test_course</option>
+                    <select class="form-control" name="test_preparation_course" placeholder="Enter your course" required>
+                        <option class="placeholder" selected disabled value="">Select Test Course</option>
                         <option value="none">
                             None
                         </option>
@@ -131,6 +131,11 @@
             <h2>
                 The prediction is {{results}}.
             </h2>
+            {% if img_loc %}
+            <div class="result-image">
+                <img src="{{ url_for('static', filename='images/' + img_loc) }}" alt="Figure">
+            </div>
+            {% endif %}
         </div>
     </body>
 </html>
